@@ -21,9 +21,9 @@ public class MovimentoNave : MonoBehaviour
     void Update()
     {
         movimentoPlayerX = Input.GetAxis("Horizontal");
-        movimentoPlayerY = Input.GetAxis("Horizontal");
+        movimentoPlayerY = Input.GetAxis("Vertical");
 
-        transform.Translate(movimentoPlayerX, movimentoPlayerY, movimentoPlayerY * speed * Time.deltaTime);
+        transform.Translate(movimentoPlayerX, movimentoPlayerY, movimentoPlayerY);
 
     }
 }
